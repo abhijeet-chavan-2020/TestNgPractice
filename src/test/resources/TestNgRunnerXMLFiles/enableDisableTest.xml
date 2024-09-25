@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learn TestNg TestEnable Disable features">
+    <parameter name="num1" value="10"></parameter>
+    <parameter name="num2" value="12"></parameter>
+    <test verbose="2" preserve-order="true" enabled="true"
+          name="Test to demo enable test functionality - Addition Test">
+        <classes>
+            <class name="com.practice.Tests.EnableDisableTest">
+                <methods>
+                    <include name="additionTest" description="This is Addition Test with Parameters in suite section"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" enabled="false"
+          name="Test to demo disable test functionality - Subtraction Test">
+        <classes>
+            <class name="com.practice.Tests.EnableDisableTest">
+                <methods>
+                    <include name="subtractionTest"
+                             description="This is Subtraction Test with Parameters in suite section"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" enabled="true"
+          name="Test to demo enable test functionality - multiplication test">
+        <parameter name="num1" value="13"></parameter>
+        <parameter name="num2" value="20"></parameter>
+        <classes>
+            <class name="com.practice.Tests.EnableDisableTest">
+                <methods>
+                    <include name="multiplicationTest"
+                             description="This is multiplication Test with Parameters in test section"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" enabled="false"
+          name="Test to demo disable test functionality - division test">
+        <parameter name="num1" value="4500"></parameter>
+        <parameter name="num2" value="150"></parameter>
+        <classes>
+            <class name="com.practice.Tests.EnableDisableTest">
+                <methods>
+                    <include name="divisionTest" description="This is division Test with Parameters in test section"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" enabled="true"
+          name="Test to demo enable test functionality - square test">
+        <classes>
+            <class name="com.practice.Tests.EnableDisableTest">
+                <methods>
+                    <include name="additionTest" description="This is addition Test with Parameters in method section">
+                        <parameter name="num1" value="45"></parameter>
+                        <parameter name="num2" value="25"></parameter>
+                    </include>
+                    <include name="multiplicationTest"
+                             description="This is multiplication Test with Parameters in method section">
+                        <parameter name="num1" value="17"></parameter>
+                        <parameter name="num2" value="18"></parameter>
+                    </include>
+                    <include name="squareTestOptionalParameter"
+                             description="This is square Test with Parameters in method section- and without Optional Parameter">
+                        <parameter name="num1" value="17"></parameter>
+                    </include>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

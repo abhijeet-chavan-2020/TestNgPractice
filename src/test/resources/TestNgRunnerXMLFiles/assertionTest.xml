@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learn TestNg Assertions">
+    <test verbose="2" preserve-order="true" name="Test to demo Assertions in TestNg">
+        <classes>
+            <class name="com.practice.Tests.AssertionsTest">
+                <methods>
+                    <include name="assertEqualsTest" description="This is assertEquals Test"/>
+                    <include name="assertNotEqualsTest" description="This is assertNotEquals Test"/>
+                    <include name="assertTrueTest" description="This is assertTrue Test"/>
+                    <include name="assertFalseTest" description="This is assertFalse Test"/>
+                    <include name="softAssertTest" description="This is softAssert Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

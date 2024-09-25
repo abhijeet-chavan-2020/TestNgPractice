@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learn TestNg Optional Parameters">
+<test name="Test to demo Optional Parameters in TestNg">
+    <classes>
+        <class name="com.practice.Tests.ParametersTest">
+            <methods>
+                <include name="squareTestOptionalParameter"
+                         description="This is square Test with Parameters in method section- and with Optional Parameter"/>
+            </methods>
+        </class>
+    </classes>
+</test>
+</suite>

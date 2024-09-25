@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learn TestNg Grouping">
+    <test verbose="2" preserve-order="true" name="Test to demo execution of TestNg Tests with Easy Group">
+        <groups>
+            <run>
+                <include name="Easy"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.practice.Tests.GroupingTest">
+            </class>
+        </classes>
+    </test>
+    <test name="Test to demo execution of TestNg Tests with Difficult Group">
+        <groups>
+            <run>
+                <include name="Difficult"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.practice.Tests.GroupingTest">
+            </class>
+        </classes>
+    </test>
+    <test name="Test to demo execution of TestNg Tests with Sanity, Regression groups" verbose="2" preserve-order="true">
+        <groups>
+            <run>
+                <include name="sanity"/>
+                <exclude name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.practice.Tests.GroupingTestNewOne"/>
+            <class name="com.practice.Tests.GroupingTestNewTwo"/>
+        </classes>
+    </test>
+    <test name="Test to demo execution of TestNg Tests with group of groups- Meta Groups" verbose="2" preserve-order="true">
+        <groups>
+            <define name="dailyBuild">
+                <include name="sanity"/>
+                <include name="smoke"/>
+            </define>
+            <define name="weeklyBuild">
+                <include name="sanity"/>
+                <include name="smoke"/>
+                <include name="regression"/>
+            </define>
+            <run>
+                <include name="dailyBuild"/>
+                <exclude name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.practice.Tests.GroupingTestNewOne"/>
+            <class name="com.practice.Tests.GroupingTestNewTwo"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Test to demo execution of TestNg Tests with Partial Groups">
+        <groups>
+            <run>
+                <include name="GroupingTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.practice.Tests.GroupingTestNewOne"/>
+            <class name="com.practice.Tests.GroupingTestNewTwo"/>
+        </classes>
+    </test>
+</suite>

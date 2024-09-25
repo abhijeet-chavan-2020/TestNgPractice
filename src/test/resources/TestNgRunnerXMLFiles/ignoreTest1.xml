@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learn TestNg Ignore Tests" preserve-order="true" >
+    <test name="Ignore Test1">
+        <classes>
+            <class name="com.practice.Tests.IgnoreTests1">
+            </class>
+            <class name="com.practice.Tests.IgnoreTests2">
+            </class>
+        </classes>
+    </test>
+</suite>

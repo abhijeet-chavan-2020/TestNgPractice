@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learn TestNg Dependency Test">
+    <test verbose="2" preserve-order="true" name="Test to demo how dependency works in TestNg">
+        <classes>
+            <class name="com.practice.Tests.DependencyTest">
+            </class>
+        </classes>
+    </test>
+</suite>

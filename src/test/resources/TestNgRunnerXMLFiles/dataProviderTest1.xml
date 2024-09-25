@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learn TestNg Data Provider">
+    <test verbose="2" preserve-order="true" name="Test to demo execution of tests with Data Provider">
+        <classes>
+            <class name="com.practice.Tests.DataProviderTest1">
+                <methods>
+<!--                    <include name="additionTest" description="This is additionTest Test"/>-->
+<!--                    <include name="subtractionTest" description="This is subtractionTest Test"/>-->
+<!--                    <include name="squareTestOptionalParameter" description="This is squareTestOptionalParameter Test"/>-->
+<!--                    <include name="squareRootTestOptionalParameter" description="This is squareRootTestOptionalParameter Test"/>-->
+<!--                    <include name="printDetails" description="This is printDetails Test"/>-->
+<!--                    <include name="friendNames" description="This is friendNames Test"/>-->
+<!--                    <include name="employeeDetails" description="This is employeeDetails Test"/>-->
+<!--                    <include name="printIndices" description="This is printIndices Test"/>-->
+<!--                    <include name="printTableOfGivenNumber" description="This is PrintNumberTableTestData Test"/>-->
+                    <include name="employeeDetailsFromExcelFile" description="This is PrintNumberTableTestData Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

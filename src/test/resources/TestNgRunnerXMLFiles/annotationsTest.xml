@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learn TestNg Annotation">
+    <test verbose="2" preserve-order="true" name="Test to demo execution of TestNg Annotations">
+        <classes>
+            <class name="com.practice.Tests.AnnotationsTest">
+                <methods>
+                    <include name="additionTest" description="This is addition Test"/>
+                    <include name="subtractionTest" description="This is subtractionTest Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test to demo execution of TestNg Annotations">
+        <classes>
+            <class name="com.practice.Tests.AnnotationsTest">
+                <methods>
+                    <include name="multiplicationTest" description="This is multiplication Test"/>
+                    <include name="divisionTest" description="This is division Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

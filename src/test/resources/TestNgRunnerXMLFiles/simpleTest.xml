@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learn Basic TestNG.xml file Suite">
+    <test verbose="2" preserve-order="true" name="Test to demo execution of TestNg.xml">
+        <classes>
+            <class name="com.practice.Tests.SimpleTests1">
+                <methods>
+                    <include name="method1" description="This is method 1 Test"/>
+                    <include name="method2" description="This is method 1 Test"/>
+                </methods>
+            </class>
+            <class name="com.practice.Tests.SimpleTests2">
+                <methods>
+                    <include name="method3" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

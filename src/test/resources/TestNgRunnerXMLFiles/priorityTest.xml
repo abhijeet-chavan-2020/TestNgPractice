@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learn TestNg Test Priorities" preserve-order="true">
+    <test name="Priority Test1">
+        <classes>
+            <class name="com.practice.Tests.PriorityTests">
+            </class>
+        </classes>
+    </test>
+</suite>
