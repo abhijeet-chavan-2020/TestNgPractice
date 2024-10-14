@@ -2,6 +2,7 @@ package com.practice.Tests;
 
 import org.testng.annotations.*;
 
+@Ignore
 public class IgnoreTests2 {
 
 //1. What is Ignore ? why we need to use the Ignore?

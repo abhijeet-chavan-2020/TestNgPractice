@@ -3,7 +3,7 @@
 <suite name="Learn TestNg Annotation">
     <test verbose="2" preserve-order="true" name="Test to demo execution of TestNg Annotations">
         <classes>
-            <class name="com.practice.Tests.AnnotationsTest">
+            <class name="com.practice.Tests.AllureTestNgPractice">
                 <methods>
                     <include name="additionTest" description="This is addition Test"/>
                     <include name="subtractionTest" description="This is subtractionTest Test"/>
@@ -11,12 +11,22 @@
             </class>
         </classes>
     </test>
-    <test name="Test to demo execution of TestNg Annotations Secons">
+    <test name="Test to demo execution of TestNg Annotations Second">
         <classes>
-            <class name="com.practice.Tests.AnnotationsTest">
+            <class name="com.practice.Tests.AllureTestNgPractice">
                 <methods>
                     <include name="multiplicationTest" description="This is multiplication Test"/>
                     <include name="divisionTest" description="This is division Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test to demo Allure Annotations">
+        <classes>
+            <class name="com.practice.Tests.AllureTestNgPractice">
+                <methods>
+                    <include name="allureAnnotationsTest" description="This is Allure Annotations Test"/>
+                    <include name="requestResponseLoggingAllureReports" description="This is API Test to check request and response logging"/>
                 </methods>
             </class>
         </classes>

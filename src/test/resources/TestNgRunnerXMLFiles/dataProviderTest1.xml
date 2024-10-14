@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Learn TestNg Data Provider">
+<suite name="Learn TestNg Data Provider" data-provider-thread-count="3">
     <test verbose="2" preserve-order="true" name="Test to demo execution of tests with Data Provider">
         <classes>
             <class name="com.practice.Tests.DataProviderTest1">
@@ -14,7 +14,8 @@
 <!--                    <include name="employeeDetails" description="This is employeeDetails Test"/>-->
 <!--                    <include name="printIndices" description="This is printIndices Test"/>-->
 <!--                    <include name="printTableOfGivenNumber" description="This is PrintNumberTableTestData Test"/>-->
-                    <include name="employeeDetailsFromExcelFile" description="This is PrintNumberTableTestData Test"/>
+<!--                    <include name="employeeDetailsFromExcelFile" description="This is PrintNumberTableTestData Test"/>-->
+                    <include name="loginTestParallel" description="This is TestLogin Test with data-provider-thread-count"/>
                 </methods>
             </class>
         </classes>

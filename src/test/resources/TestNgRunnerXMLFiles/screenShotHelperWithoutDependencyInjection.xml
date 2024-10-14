@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learn TestNg Annotation">
+    <listeners>
+        <listener class-name="com.practice.Tests.ListenersPractice.ITestListenerPractice"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Test to demo Screenshot helper using Listeners">
+        <classes>
+            <class name="com.practice.Tests.CaptureSSFailedTestCases.ScreenShotFailedTCUsingTestNgListeners">
+                <methods>
+                    <include name="launchWebPage" description="Launch Web Page"/>
+                    <include name="test1" description="Perform Step 1"/>
+                    <include name="test2" description="Perform Step 2"/>
+                    <include name="test3" description="Capture Screenshot in-between"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

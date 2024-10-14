@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learn TestNg Timeout Test" >
+    <test verbose="2" preserve-order="true" name="Test to demo execution of tests with Timeout">
+        <classes>
+            <class name="com.practice.Tests.TimeoutTests">
+                <methods>
+                    <include name="testmethod1" description="This is TestLogin Test with Timeout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

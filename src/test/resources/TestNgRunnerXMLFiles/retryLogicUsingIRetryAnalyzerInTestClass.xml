@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Learn TestNg Annotation">
-    <test verbose="2" preserve-order="true" name="Test to demo execution of TestNg Annotations">
+<suite name="Learn TestNg Retry Failed Test case logic">
+    <test verbose="2" preserve-order="true" name="Test to demo Retry of failed test cases on Test Class level">
         <classes>
-            <class name="com.practice.Tests.AnnotationsTest">
+            <class name="com.practice.Tests.RetryFailedTestCasesPart1">
                 <methods>
                     <include name="additionTest" description="This is addition Test"/>
                     <include name="subtractionTest" description="This is subtractionTest Test"/>
@@ -11,9 +11,9 @@
             </class>
         </classes>
     </test>
-    <test name="Test to demo execution of TestNg Annotations Secons">
+    <test name="Test to demo Retry of failed test cases on Test Class level part 2">
         <classes>
-            <class name="com.practice.Tests.AnnotationsTest">
+            <class name="com.practice.Tests.RetryFailedTestCasesPart1">
                 <methods>
                     <include name="multiplicationTest" description="This is multiplication Test"/>
                     <include name="divisionTest" description="This is division Test"/>

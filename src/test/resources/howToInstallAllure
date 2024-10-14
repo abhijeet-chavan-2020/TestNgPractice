@@ -1,0 +1,9 @@
+go to allure site - https://allurereport.org/docs/install-for-windows/
+open scoop website- https://scoop.sh/
+Open Windows Powershell
+Run following commands:
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+Then run command to install allure - scoop install allure
+Add dependency in the project: we are using TestNG so add TestNG dependency. Review the Allure website
+use this link - https://allurereport.org/docs/testng/

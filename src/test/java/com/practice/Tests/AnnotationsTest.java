@@ -1,5 +1,6 @@
 package com.practice.Tests;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class AnnotationsTest {
@@ -54,28 +55,29 @@ public class AnnotationsTest {
         System.out.println("I am in afterGroupsTest in "+ AnnotationsTest.class);
     }
 
-    @Test (groups = "Easy")
+    @Test (groups = "Easy", description = "Easy Addition Test")
     public void additionTest(){
         int i=10;
         int j=20;
         System.out.println("Addition of i="+i+" and j="+j+" is= "+ (i+j));
+        Assert.assertEquals((i+j), 35);
     }
 
-    @Test (groups = "Easy")
+    @Test (groups = "Easy", description = "Easy Subtraction Test")
     public void subtractionTest(){
         int i=10;
         int j=20;
         System.out.println("Subtraction of i="+i+" and j="+j+" is= "+ (j-i));
     }
 
-    @Test (groups = "Difficult")
+    @Test (groups = "Difficult", description = "Difficult multiplication Test")
     public void multiplicationTest(){
         int i=10;
         int j=20;
         System.out.println("Multiplication of i="+i+" and j="+j+" is= "+ (i*j));
     }
 
-    @Test (groups = "Difficult")
+    @Test (groups = "Difficult", description = "Difficult division Test")
     public void divisionTest(){
         int i=10;
         int j=20;

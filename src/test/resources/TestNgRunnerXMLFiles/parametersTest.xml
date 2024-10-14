@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Learn TestNg Parameters">
+<suite name="Learn TestNg Parameters" >
     <parameter name="num1" value="10"></parameter>
     <parameter name="num2" value="12"></parameter>
     <test verbose="2" preserve-order="true"

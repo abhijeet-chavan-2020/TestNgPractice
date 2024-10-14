@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Learn TestNg Retry Failed Test case logic]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test to demo Retry of failed test cases on Test Class level(failed)">
+    <classes>
+      <class name="com.practice.Tests.RetryFailedTestCasesPart1">
+        <methods>
+          <include name="additionTest"/>
+          <include name="subtractionTest"/>
+        </methods>
+      </class> <!-- com.practice.Tests.RetryFailedTestCasesPart1 -->
+    </classes>
+  </test> <!-- Test to demo Retry of failed test cases on Test Class level(failed) -->
+  <test thread-count="5" name="Test to demo Retry of failed test cases on Test Class level part 2(failed)">
+    <classes>
+      <class name="com.practice.Tests.RetryFailedTestCasesPart1">
+        <methods>
+          <include name="multiplicationTest"/>
+        </methods>
+      </class> <!-- com.practice.Tests.RetryFailedTestCasesPart1 -->
+    </classes>
+  </test> <!-- Test to demo Retry of failed test cases on Test Class level part 2(failed) -->
+</suite> <!-- Failed suite [Learn TestNg Retry Failed Test case logic] -->

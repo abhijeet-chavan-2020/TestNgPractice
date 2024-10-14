@@ -1,0 +1,17 @@
+parallel="none", thread-count="2"
+parallel="false", thread-count="2"
+-> When parallel="none"/ parallel="false", then TestNg will consider sequential execution irrespective of the thread-count.
+
+parallel="tests", thread-count="1"
+-> This will create only one thread and execute Tests with single Thread, This is also example of sequential execution.
+
+thread-count can not be negative value. It will throw and exception - illegalArgumentException.
+
+parallel="instance" -> This is used when @Factory annotations are used.
+
+parallel="tests"/"methods"/"classes" are most commonly used.
+
+parallel="tests" thread-count="2"
+-> whenever thread-count > 1 then its parallel execution. In this case, test tag from the testng.xml file will be executed parallel with 2 tests at one time.
+so if u have t1, t2, t3 tests, then t1 and t2 will be executed first and t3 will have to wait till any one thread is free. Then the free thread will
+pick t3 test and start execution.
