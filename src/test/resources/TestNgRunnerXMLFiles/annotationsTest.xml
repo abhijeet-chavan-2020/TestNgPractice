@@ -11,7 +11,7 @@
             </class>
         </classes>
     </test>
-    <test name="Test to demo execution of TestNg Annotations Secons">
+    <test name="Test to demo execution of TestNg Annotations Seconds">
         <classes>
             <class name="com.practice.Tests.AnnotationsTest">
                 <methods>

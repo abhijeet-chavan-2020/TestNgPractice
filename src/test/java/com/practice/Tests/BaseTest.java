@@ -2,6 +2,7 @@ package com.practice.Tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -33,6 +34,12 @@ public class BaseTest {
             Utils.ScreenShotHelper.takeScreenShot(driver, result.getMethod().getMethodName()+ "_"+ System.currentTimeMillis());
         }
     }
+
+    public void waitForPageToLoad(){
+        JavascriptExecutor js= (JavascriptExecutor) driver;
+        wait.until(WebDriver -> js.executeScript("return document.readyState").equals("complete"));
+    }
+
     @AfterTest
     public void tearDown(){
         driver.quit();

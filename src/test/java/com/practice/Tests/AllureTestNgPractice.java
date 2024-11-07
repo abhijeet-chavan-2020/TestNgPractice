@@ -76,7 +76,7 @@ public class AllureTestNgPractice {
 
     @Test
     public void requestResponseLoggingAllureReports() {
-        //to add path parameter, we use pathParam() andd supply key and value. And then in the get() method, we can use the key of the pathParam that we have added within {} braces.
+        //to add path parameter, we use pathParam() and supply key and value. And then in the get() method, we can use the key of the pathParam that we have added within {} braces.
         // It will internally convert the variable and get the value which is 2 in this case.
         //Effective URL will be - https://reqres.in/api/users/2
 
